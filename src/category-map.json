@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "category": "Warframe",
+    "parts": ["blueprint", "system", "neuroptics", "chassis"]
+  },
+  {
+    "id": "2",
+    "category": "piece",
+    "parts": []
+  }
+]

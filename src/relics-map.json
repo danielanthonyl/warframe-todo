@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Axi S17 Relic",
+    "items": [
+      {
+        "itemId": "2",
+        "rarity": "rare"
+      }
+    ]
+  },
+  {
+    "name": "Lith C12 Relic",
+    "items": [
+      {
+        "itemId": "3",
+        "rarity": "common"
+      }
+    ]
+  },
+  {
+    "name": "Meso A7 Relic",
+    "items": [
+      {
+        "itemId": "4",
+        "rarity": "common"
+      }
+    ]
+  },
+  {
+    "name": "Neo A13 Relic",
+    "items": [
+      {
+        "itemId": "5",
+        "rarity": "uncommon"
+      }
+    ]
+  }
+]
