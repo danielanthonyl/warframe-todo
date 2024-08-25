@@ -366,10 +366,25 @@ export const ItemScreen = () => {
               <Box
                 onMouseEnter={() => setHoveredRelicIndex(index)}
                 onMouseLeave={() => setHoveredRelicIndex(null)}
-                sx={{ display: "flex", gap: 1, position: "relative" }}
+                sx={{
+                  display: "flex",
+                  gap: 1,
+                  position: "relative",
+                  marginTop: 2,
+                }}
               >
-                <Typography sx={{ cursor: "grab" }}>{relic?.name}</Typography>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Box>
+                  <Typography sx={{ lineHeight: "normal" }}>
+                    {relic?.name}
+                  </Typography>
+                  {relic?.items.map((item) => (
+                    <Typography variant="caption" key={item.rarity}>
+                      {item.rarity}
+                    </Typography>
+                  ))}
+                </Box>
+
+                <Box sx={{ display: "flex", alignItems: "start", gap: 1 }}>
                   <MinusCircle
                     style={{ cursor: "grab" }}
                     size={23}
@@ -387,7 +402,7 @@ export const ItemScreen = () => {
                   <Paper
                     sx={{
                       position: "absolute",
-                      top: 30,
+                      top: 40,
                       zIndex: 1,
                       padding: 2,
                       maxHeight: 400,
